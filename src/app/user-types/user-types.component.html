@@ -1,0 +1,12 @@
+<div [ngSwitch]="addFlag">
+  <app-add-roles *ngSwitchCase="true"></app-add-roles>
+  <div *ngSwitchCase="false"><button type="button" class="btn btn-outline-primary" (click)="toggleCreateForm()">Add</button></div>
+</div>
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let role of roles" class="list-group-item">{{role.name}}</li>
+  </ul>
+</div>
+<pre>
+  {{roles }}
+  </pre>

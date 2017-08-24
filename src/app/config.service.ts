@@ -13,4 +13,6 @@ export class ConfigService {
     };
   }
 
+  appUrl  = 'http://localhost:3000';
+
 }
