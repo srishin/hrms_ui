@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AppService } from './app.service';
 import { ConfigService } from './config.service';
 import { AdminService } from './admin.service';
 
@@ -39,12 +41,14 @@ import { AddRolesComponent } from './add-roles/add-roles.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [
+    AppService,
     ConfigService,
     AdminService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

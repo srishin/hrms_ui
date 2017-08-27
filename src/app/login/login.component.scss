@@ -4,3 +4,10 @@
 * @Last Modified by:   webmaster
 * @Last Modified time: 2017-08-24 12:44:58
 */
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }
