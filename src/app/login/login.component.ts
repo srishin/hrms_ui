@@ -27,10 +27,12 @@ export class LoginComponent implements OnInit {
   submit() {
     console.log(this.model);
     this.app.tryLogin(this.model).subscribe(
-      data => console.log(data),
+      data => {
+        console.log(data)
+        this.router.navigate(['/dashboard']);
+      },
       error => console.log(error)
     );
-    this.router.navigate(['/dashboard']);
   }
 
 }

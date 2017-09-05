@@ -14,6 +14,10 @@ export class AdminService {
     return this.http.get(this.config.appUrl + '/roles');
   }
 
+  addRole(role) {
+    return this.http.post(this.config.appUrl + '/roles', role);
+  }
+
 
 
 }

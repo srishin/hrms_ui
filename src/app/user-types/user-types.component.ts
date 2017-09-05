@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AdminService} from './../admin.service'
+import { Router } from '@angular/router';
+import {AdminService} from './../admin.service';
 @Component({
   selector: 'app-user-types',
   templateUrl: './user-types.component.html',
@@ -7,7 +8,7 @@ import {AdminService} from './../admin.service'
 })
 export class UserTypesComponent implements OnInit {
 
-  constructor(private admins:AdminService) { }
+  constructor(private admins:AdminService,private router: Router) { }
   roles:Object
   addFlag:Boolean
   ngOnInit() {
@@ -15,6 +16,6 @@ export class UserTypesComponent implements OnInit {
   	this.addFlag = false;
   }
   toggleCreateForm(){
-  	this.addFlag = !this.addFlag;
+    this.router.navigate(['/add-user-type']);
   }
 }

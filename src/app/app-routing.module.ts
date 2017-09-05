@@ -12,6 +12,7 @@ import { ViewRequestsComponent } from './view-requests/view-requests.component';
 import { AvailableComponent } from './available/available.component';
 import { TakenComponent } from './taken/taken.component';
 import { RequestComponent } from './request/request.component';
+import { AddUserTypeComponent } from './add-user-type/add-user-type.component';
 // import { PageNotFoundComponent } from './not-found.component';
 
 const appRoutes: Routes = [
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   { path: 'available', component: AvailableComponent },
   { path: 'user-types', component: UserTypesComponent },
   { path: 'leave-types', component: LeaveTypesComponent },
+  { path: 'add-user-type', component: AddUserTypeComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: TakenComponent }
 ];

@@ -22,6 +22,7 @@ import { AvailableComponent } from './available/available.component';
 import { TakenComponent } from './taken/taken.component';
 import { RequestComponent } from './request/request.component';
 import { AddRolesComponent } from './add-roles/add-roles.component';
+import { AddUserTypeComponent } from './add-user-type/add-user-type.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AddRolesComponent } from './add-roles/add-roles.component';
     TakenComponent,
     RequestComponent,
     ViewRequestsComponent,
-    AddRolesComponent
+    AddRolesComponent,
+    AddUserTypeComponent
   ],
   imports: [
     BrowserModule,
